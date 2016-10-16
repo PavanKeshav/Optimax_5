@@ -1,1 +1,1 @@
-#define UTS_RELEASE "3.10.61-test+"
+#define UTS_RELEASE "3.10.61-StockOptimized+"
