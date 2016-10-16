@@ -1861,7 +1861,7 @@ SYSCALL_DEFINE3(execve,
 	struct filename *path = getname(filename);
 	int error = PTR_ERR(path);
 	if (!IS_ERR(path)) {
-#ifdef CONFIG_RKP_KDP
+/*#ifdef CONFIG_RKP_KDP
 		if(rkp_cred_enable){
 			rkp_call(RKP_CMDID(0x4b),(u64)path->name,0,0,0,0);
 		}
@@ -1887,7 +1887,7 @@ SYSCALL_DEFINE3(execve,
 				return -EACCES;
 			}
 		}
-#endif
+#endif*/
 		error = do_execve(path->name, argv, envp);
 		putname(path);
 	}
