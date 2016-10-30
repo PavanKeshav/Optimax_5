@@ -1,1 +1,1 @@
-#define UTS_RELEASE "3.10.61-Optimax5.7+"
+#define UTS_RELEASE "3.10.61-Optimax 5.8"
